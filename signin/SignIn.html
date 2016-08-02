@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name ="viewport" content= "width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+  <script language="JavaScript" type="text/javascript"> 
+		jQuery(document).ready(function() { 
+		var offset = 100; 
+		var duration = 10; 
+		jQuery(window).scroll(function() {	 
+		if (jQuery(this).scrollTop() > offset) { 
+		jQuery('.back-to-top').fadeIn(duration); 
+		}
+		else { 
+		jQuery('.back-to-top').fadeOut(duration); 
+		} 
+		});		
+		jQuery('.back-to-top').click(function(event) { 
+		event.preventDefault(); 
+		jQuery('html, body').animate({scrollTop: 0}, duration); 
+		return false; 
+		}) 
+		}); 
+  </script>
+  
+  <script language="JavaScript" type="text/javascript">
+  $(document).ready(function() {  
+  $(window).scroll(function() {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 20) {
+      $('#nav_bar').addClass('navbar-fixed');	     
+    }
+    if ($(window).scrollTop() < 21) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+  }); 
+  </script>  
+ 
+   <script language="JavaScript" type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		$(document).ready(function(){
+			// Show hide popover
+			$(".dropdown").click(function(){
+				$(this).find(".dropdown-menu").slideToggle("fast");
+        });
+		});
+	    $(document).on("click", function(event){
+			var $trigger = $(".dropdown");
+			if($trigger !== event.target && !$trigger.has(event.target).length){
+				$(".dropdown-menu").slideUp("fast");
+				}            
+			});
+  </script>
+  <title>Members</title>
+  
+ </head>
+ <body>
+   <header>
+	  <div class="firstheader" style="background-color:#2a2a2a;text-decoration:none;margin:auto;">	
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a id="top1" href="#"> <i class="fa fa-envelope"></i> Email Us</a>  
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<span class="topheader">
+		 <a id="top1" href="FindPage.html"> <i class="fa fa-search"></i>&nbsp Weather in your city</a>		
+		 <a id="top1" href="Sign in.html"> <i class="fa fa-sign-in"></i>&nbsp Sign In</a>
+		 <a id="top1" href="3.html.html"> <i class="fa fa-arrow-circle-o-down"></i>&nbsp Sign Up</a>
+		</span>
+	  </div>
+     <div>
+	  <nav id="nav_bar" >	    	
+	   <a href="#"> <img src="Logo.png" alt="Open Weather Map"></a>
+	    <ul>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <li><a href="#">Weather</a></li>
+		  <li class="dropdown"><a href="#">Maps &nbsp <i class="fa fa-caret-down"></i></a>
+		    <ul class="dropdown-menu">
+                <li id="explicit_" style="border-top: 1px solid #353432;"><a href="#">Weather maps</a></li>
+                <li><a href="#">Weather Maps</a></li>
+			    <li><a href="#">Current Sattelite Maps</a></li>
+                <li><a href="#">Beautiful Maps</a></li>
+            </ul>
+		  </li> 
+		  <li><a href="#">API</a></li>
+		  <li><a href="#">Price</a></li>
+		  <li><a href="#">Partners</a></li>
+		  <li><a href="#">Stations</a></li>
+		  <li><a href="#">News</a></li>
+		  <li class="dropdown"><a href="#">About&nbsp <i class="fa fa-caret-down"></i></a>
+		    <ul class="dropdown-menu">
+                <li id="explicit_" style="border-top: 1px solid #353432;"><a href="#">About company</a></li>
+                <li><a href="#">OWM Platform</a></li>
+                <li><a href="#">Big Data Technology</a></li>
+                <li><a href="#">Meteorological models</a></li>
+                <li><a href="#">Data sources</a></li>
+            </ul>
+		  </li>
+        </ul>
+	  </nav>
+     </div>	   
+	</header>
+         
+	<div style="font-family:'Roboto', sans-serif;display:inline-block;padding-left:170px;margin-right:auto;margin-left: auto;font-size:15px;height:40px;">
+		<div class="row" style="text-decoration:none;">
+            <div class="col-sm-4" style="position:relative;min-height:1px;padding-left:15px;float:left;font-size:">Sign In 
+			    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div class="col-sm-8" style=" position:relative;min-height:1px;padding-right:15px;float:right;">
+				      <a href="#" style="color:orange;font-family:sans-serif;font-size:15px;text-decoration:none;">Home</a>/<a href="#" style="text-decoration:none;">SignIn</a>
+				 </div>
+		    </div>
+		</div>
+	</div>
+			<hr>
+        <br>
+		<section>
+		 <div style="margin:auto;padding-top:10px;padding-left:30px;padding-right:30px;padding-bottom:10px;width:450px;height:400px;background:#fff;border:1px solid #ccc;border-radius:3px;position:relative;z-index:2;box-shadow:0 0 20px rgba(0,0,0,0.2)">
+             <h3><br>Sign In To Your Account</h3>
+					 
+				<hr>
+                  <form role="form">
+                     <div class="form-group" >
+                        <span> <i class="fa fa-user" aria-hidden="true" ></i><input type="email" id="email" style="margin-left:15px;width:90%;"placeholder="Enter email"></span>
+                     </div>
+					 <br><br>
+                   	 <div class="form-group">
+                          <span><i class="fa fa-lock" aria-hidden="true" style="border:1px solid #ccc;border-radius:3px;position:relative;"></i><input type="password" class="form-control" id="pwd" style="margin-left:15px;width:90%;" placeholder="Enter password" required></span>
+                     </div>
+                     <div class="checkbox">
+                           <label><input type="checkbox"> Remember me</label>
+                     </div>
+					 <br>
+                     <button type="submit" class="btn btn-default" style="background-color:#CE6A21; border-color:#CE6A21; border-radius:3px; padding:10px; margin:auto;color:white;">Submit</button>
+				<hr>
+				  </form>
+
+					 <p> Not registered? <a href="#" style="color:#D46C22;text-decoration:none;">Create an Account.</a></p>
+                     <p>Lost your password??<a href="#" style="color:#D46C22;text-decoration:none;">Click here to recover.</a></p>
+         </div>		
+   </section>
+
+   <footer class="container">
+  	 <div class="footer_list">
+   	   <ul>
+		  <li><h2>Weather in your city</h2></li>
+		     <ul class="sub_footer_list">
+			    <li><a href="#">Find your city</a></li>			
+				<li><a href="#">Weather maps</a></li>	
+			 </ul>
+	      <li><h2>Weather APIs</h2></li>			
+		      <ul class="sub_footer_list">
+				<li><a href="#">How to start</a></li>			
+				<li><a href="#">Weather APIs for developers</a></li>			
+				<li><a href="#">Current weather</a></li>
+				<li><a href="#">5 day / 3 hour weather forecast</a></li>
+				<li><a href="#">16 day / daily weather forecast</a></li>
+				<li><a href="#">Hourly historical data</a></li>
+				<li><a href="#">Data from weather stations</a></li>
+				<li><a href="#">Examples of API use</a></li>
+	         </ul>
+	    </ul>
+	</div>
+	<div class="footer_list">
+	  <ul>
+		  <li><h2>Map layers</h2></li>
+		     <ul class="sub_footer_list">
+			    <li><a href="#">Examples of weather map layers</a></li>
+				<li><a href="#">Embed weather maps with array of data</a></li>
+				<li><a href="#">Embed weather maps with tile server</a></li>
+			 </ul>
+		  <li><h2>How to subscribe</h2></li>
+			  <ul class="sub_footer_list">	
+				<li><a href="#">Price-list</a></li>
+				<li><a href="#">Subscribe to APIs</a></li>
+			  </ul>
+		  <li id="boxed">
+			   <p>Found a bug? Have a question or idea?</p>
+			   <p>Welcome to <a href="#"> Support center</a></p>
+		  </li>
+			 
+        </ul>
+     </div>
+	 <div class="footer_list">
+	  <ul>
+		<li><h2>Weather station network</h2></li>
+			 <ul class="sub_footer_list">	
+				<li><a href="#">How to connect your weather station</a></li>
+				<li><a href="#">DIY weather station projects</a></li>
+			 </ul>
+		<li><h2>About</h2></li>
+			  <ul class="sub_footer_list">	
+				<li><a href="#">OpenWeatherMap technology</a></li>
+				<li><a href="#">VANE Spacial Data Science Platform</a></li>
+			  </ul>
+		<li><h2>Go Social</h2></li>
+		<li class="social"><span>Follow OpenWeatherMap on <a href="#">Twitter</a>, <a href="#">Facebook</a>, <a href="#">Google+</a> and <a href="#">GitHub.</a></span></li>
+		</ul>
+	   </div>
+		<div class="copyright" >
+		     © 2012-2016 OpenWeatherMap, Inc. <a href="#">About company</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        <div>
+   </footer>
+    <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+ </body>
+</html>
